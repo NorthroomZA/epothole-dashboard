@@ -9,7 +9,6 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import "../styling.css"
 import Navbar from 'src/components/navbar'
-import { navigate, routes } from '@redwoodjs/router'
 
 const AssignPotHolePage = () => {
   const [potholes, setPotholes] = useState([])
@@ -51,7 +50,6 @@ const AssignPotHolePage = () => {
   }
 
   useEffect(() => {
-    // Fetch potholes and employees when the component mounts
     fetchPotholes()
       .then((data) => setPotholes(data))
       .catch((error) => console.error(error))
@@ -69,9 +67,9 @@ const AssignPotHolePage = () => {
 
       <h2>Potholes:</h2>
       {potholes.length > 0 ? (
-        <div className="pothole-cards"> {/* Add a container for the pothole cards */}
+        <div className="pothole-cards">
           {potholes.map((pothole) => (
-            <div key={pothole.id} className="pothole-card"> {/* Create a card for each pothole */}
+            <div key={pothole.id} className="pothole-card">
               <h3>Pothole ID: {pothole.id}</h3>
               <p>Assigned to: {pothole.assignedToId}</p>
               <button onClick={() => handleAssignPothole(pothole.id)}>

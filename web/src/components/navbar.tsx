@@ -20,11 +20,6 @@ const Navbar = () => {
             Login
           </Link>
         </li>
-        {/* <li className="navbar__item">
-          <Link to={routes.adminDashboard()} className="navbar__link">
-            Admin Dashboard
-          </Link>
-        </li> */}
       </ul>
     </nav>
   )

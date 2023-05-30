@@ -19,7 +19,7 @@ const UpdatePotholeCell = ({ id, employeeId }) => {
       const { firstName } = data.assignedTo
 
       toast.success(`Employee ${firstName} has been assigned to pothole #${id}`)
-      navigate('/potholes') // Assuming a page named "potholes" that displays the table
+      navigate('/potholes')
     } catch (error) {
       toast.error('An error occurred')
       console.error(error)

@@ -19,12 +19,9 @@ const LoginPage = () => {
       })
       if (response.ok) {
         const { token } = await response.json()
-        // Save the token in local storage or any other secure storage
         sessionStorage.setItem('token', token)
-        // Redirect to the admin dashboard or another protected page
         navigate('/admin-dashboard')
       } else {
-        // Handle login error or show a notification
       }
     } catch (error) {
       console.error('Error logging in:', error)

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useMutation } from '@redwoodjs/web'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import "../styling.css"
@@ -9,9 +8,6 @@ const CreateEmployeePage = () => {
   const [users, setUsers] = useState([])
   let baseUrl = "https://epothole.northroom.dev/"
 
-
-
-  // Fetch all users on page load
   useEffect(() => {
     const token = sessionStorage.getItem('token')
     const fetchUsers = async () => {

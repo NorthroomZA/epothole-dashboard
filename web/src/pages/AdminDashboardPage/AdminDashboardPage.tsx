@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { Link, routes } from '@redwoodjs/router'
 import "./dashboard.css"
 import Navbar from 'src/components/navbar'
