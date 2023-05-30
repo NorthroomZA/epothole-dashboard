@@ -1,0 +1,138 @@
+body {
+  margin-top: 0;
+}
+
+.pothole-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.pothole-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.pothole-card h3 {
+  margin-top: 0;
+}
+
+.pothole-card p {
+  margin-bottom: 10px;
+}
+
+.pothole-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.pothole-card button:hover {
+  background-color: #0056b3;
+}
+
+
+.employee-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employee-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.employee-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.assign-pothole-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.assign-pothole-form label {
+  margin-bottom: 10px;
+}
+
+.assign-pothole-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.assign-pothole-form button {
+  padding: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.assign-pothole-form button:hover {
+  background-color: #23527c;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+  background-color: #e9e9e9;
+}
+
+.user-table button {
+  padding: 5px 10px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-table button:hover {
+  background-color: #23527c;
+}
+
+.user-table p {
+  margin-top: 20px;
+  text-align: center;
+}
