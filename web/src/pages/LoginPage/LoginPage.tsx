@@ -8,7 +8,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('')
 
   const handleLogin = async () => {
-    let baseUrl = "https://epothole.northroom.dev/"
+    let baseUrl = "https://epothole.northroom.dev"
     try {
       const response = await fetch(`${baseUrl}/auth/login`, {
         method: 'POST',
